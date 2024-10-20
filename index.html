@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./Style.css">
+        <title>Calculadora</title>
+    </head>
+    <body>
+        <header>
+            <h1>Calculadora</h1>
+        </header>
+        <main>
+            <form id="Resolver">
+                <input id="accesodeejercicio" type="text"
+                    placeholder="ingrese el ejercicio">
+                <div class="contenedorbotones">
+                    <div class="contenedornumeros">
+                        <button id="boton1" value="1"
+                            onclick="CargarDatos(value)">1</button>
+                        <button id="boton2" value="2"
+                            onclick="CargarDatos(value)">2</button>
+                        <button id="boton3" value="3"
+                            onclick="CargarDatos(value)">3</button>
+                        <button id="boton4" value="4"
+                            onclick="CargarDatos(value)">4</button>
+                        <button id="boton5" value="5"
+                            onclick="CargarDatos(value)">5</button>
+                        <button id="boton6" value="6"
+                            onclick="CargarDatos(value)">6</button>
+                        <button id="boton7" value="7"
+                            onclick="CargarDatos(value)">7</button>
+                        <button id="boton8" value="8"
+                            onclick="CargarDatos(value)">8</button>
+                        <button id="boton9" value="9"
+                            onclick="CargarDatos(value)">9</button>
+                        <button id="boton0" value="0"
+                            onclick="CargarDatos(value)">0</button>
+                    </div>
+                    <div class="contenedoroperadores">
+                        <div class="contenedoroperadorestres">
+                            <button id="botonBorrar" value="" onclick="BorrarDatos(value)">borrar</button>
+                            <button id="botonmas" value="+"
+                                onclick="CargarDatos(value)">+</button>
+                        </div>
+                        <div class="contenedoroperadoresdos">
+                            <button id="botonmenos" value="-"
+                                onclick="CargarDatos(value)">-</button>
+                            <button id="botonpor" value="*"
+                                onclick="CargarDatos(value)">*</button>
+                            <button id="botondividir" value="/"
+                                onclick="CargarDatos(value)">/</button>
+                        </div>
+                    </div>
+                </div>
+                <button id="botonResolver" type="submit"> Resolver Ejercicio </button>
+            </form>
+            <input id="resultado"> </input>
+
+        </main>
+
+        <script src="logica.js"></script>
+    </body>
+</html>
